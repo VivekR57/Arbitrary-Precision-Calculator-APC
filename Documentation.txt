@@ -1,0 +1,34 @@
+NAME : R.VIVEK
+DATE : 22/11/2024
+Project Description:
+This project implements basic arithmetic operations (addition, subtraction, multiplication, division)
+on arbitrarily large integers using a doubly linked list. Each node in the list represents a 4-digit chunk
+of the integer, enabling operations on numbers larger than those that can typically be represented
+by standard data types. The project supports addition, subtraction, multiplication, and division on these large integers.
+
+SAMPLE INPUT and output:
+
+1. Addition (Function: add)
+
+Operand 1: "1234567890123456"
+Operand 2: "9876543210987654"
+Result: 11111111101111110
+
+2. Subtraction (Function: sub)
+
+Operand 1: "9876543210987654"
+Operand 2: "1234567890123456"
+Result: 8641975320864198
+
+3. Multiplication (Function: multiply)
+
+Operand 1: "1234567890"
+Operand 2: "9876543210"
+Result: 12193263111263526900
+
+
+4. Division (Function: division)
+ 
+Operand 1: "9876543210"
+Operand 2: "1234"
+Quotient: 8003681
