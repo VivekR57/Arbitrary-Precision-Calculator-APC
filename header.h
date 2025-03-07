@@ -1,6 +1,11 @@
 #ifndef HEADER_H
 #define HEADER_H
 
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 // Enum for function success or failure status
 typedef enum
 {

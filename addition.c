@@ -1,29 +1,29 @@
-#include "header.h"
-#include <stdlib.h>
-#include <stdio.h>
-
 // Function to perform addition of two numbers represented as doubly linked lists
+#include "header.h"
+/*  
+ * Addition of Large Numbers Using Doubly Linked Lists  
+ *  
+ * Adds two large numbers represented as doubly linked lists.  
+ *  
+ * Input: Two linked lists representing numbers, each node storing up to 4 digits.  
+ * Output: A new linked list representing the sum.  
+ */
+
 void add(cal *head1, cal *tail1, cal *head2, cal *tail2, cal **head_result, cal **tail_result)
 {
-    int carry = 0; // Initialize carry to 0 for addition
-
-    // Loop through both lists from their least significant digit (tail) to the most significant digit (head)
+    int carry = 0;
     while (tail1 != NULL || tail2 != NULL || carry != 0)
     {
-        int sum = carry; // Start with the carry from the previous addition
-
-        // Add the data from the first list if it is not NULL
+        int sum = carry; 
         if (tail1 != NULL)
         {
-            sum = sum + tail1->data; // Add the current digit of the first list
-            tail1 = tail1->prev;     // Move to the previous node in the first list
+            sum = sum + tail1->data; 
+            tail1 = tail1->prev;    
         }
-
-        // Add the data from the second list if it is not NULL
         if (tail2 != NULL)
         {
-            sum = sum + tail2->data; // Add the current digit of the second list
-            tail2 = tail2->prev;     // Move to the previous node in the second list
+            sum = sum + tail2->data; 
+            tail2 = tail2->prev;     
         }
 
         // Calculate the carry for the next iteration

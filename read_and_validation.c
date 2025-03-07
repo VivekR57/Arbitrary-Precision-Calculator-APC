@@ -1,7 +1,11 @@
+// Command-Line Argument Validation  
 #include "header.h"
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+/*  
+ * Validates the number format and operator in user input.  
+ *  
+ * Input: Command-line arguments (operand1, operator, operand2)  
+ * Output: Returns success if valid, failure otherwise  
+ */
 
 // Function to validate the command-line arguments for the operation
 Status read_and_validation(int argc, char *argv[])

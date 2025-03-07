@@ -1,11 +1,14 @@
+/*  
+ * Large Number Calculator  
+ *  
+ * Performs arithmetic operations (+, -, x, /) on large numbers using linked lists.  
+ *  
+ * Input: Two large numbers (as strings) and an operator  
+ * Output: Computed result as a linked list  
+ */
+
 #include "header.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-
-int is_result_negative = 0; // Global flag to indicate if the result is negative
-
-// Helper function to set the result as negative
+int is_result_negative = 0; 
 void set_result_negative(int *is_negative)
 {
     *is_negative = 1;

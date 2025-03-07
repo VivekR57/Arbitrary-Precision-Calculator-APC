@@ -1,7 +1,4 @@
 #include "header.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 
 // Function to insert a node at the beginning of the doubly linked list
 void insert_at_beginning(cal **head, cal **tail, int value)
